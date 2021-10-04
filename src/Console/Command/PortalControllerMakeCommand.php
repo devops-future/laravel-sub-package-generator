@@ -1,8 +1,8 @@
 <?php
 
-namespace Webkul\PackageGenerator\Console\Command;
+namespace DevOpsFuture\PackageGenerator\Console\Command;
 
-use Webkul\PackageGenerator\Generators\PackageGenerator;
+use DevOpsFuture\PackageGenerator\Generators\PackageGenerator;
 
 class PortalControllerMakeCommand extends MakeCommand
 {

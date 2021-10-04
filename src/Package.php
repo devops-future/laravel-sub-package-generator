@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\PackageGenerator;
+namespace DevOpsFuture\PackageGenerator;
 
 use Illuminate\Filesystem\Filesystem;
 

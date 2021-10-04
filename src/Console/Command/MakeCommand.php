@@ -1,11 +1,11 @@
 <?php
 
-namespace Webkul\PackageGenerator\Console\Command;
+namespace DevOpsFuture\PackageGenerator\Console\Command;
 
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Str;
-use Webkul\PackageGenerator\Generators\PackageGenerator;
+use DevOpsFuture\PackageGenerator\Generators\PackageGenerator;
 
 class MakeCommand extends Command
 {
@@ -19,7 +19,7 @@ class MakeCommand extends Command
     /**
      * PackageGenerator object
      *
-     * @var \Webkul\PackageGenerator\Generators\PackageGenerator
+     * @var \DevOpsFuture\PackageGenerator\Generators\PackageGenerator
      */
     protected $packageGenerator;
 
@@ -27,7 +27,7 @@ class MakeCommand extends Command
      * Create a new command instance.
      *
      * @param  \Illuminate\Filesystem\Filesystem  $filesystem
-     * @param  \Webkul\PackageGenerator\Generators\PackageGenerator  $packageGenerator
+     * @param  \DevOpsFuture\PackageGenerator\Generators\PackageGenerator  $packageGenerator
      * @return void
      */
     public function __construct(

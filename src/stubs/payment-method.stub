@@ -2,7 +2,7 @@
 
 namespace $NAMESPACE$;
 
-use Webkul\Payment\Payment\Payment;
+use DevOpsFuture\Payment\Payment\Payment;
 
 class $CLASS$ extends Payment
 {

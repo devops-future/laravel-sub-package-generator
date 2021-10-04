@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\PackageGenerator\Console\Command;
+namespace DevOpsFuture\PackageGenerator\Console\Command;
 
 use Illuminate\Support\Str;
-use Webkul\PackageGenerator\Generators\PackageGenerator;
+use DevOpsFuture\PackageGenerator\Generators\PackageGenerator;
 
 class ShippingMethodProviderMakeCommand extends MakeCommand
 {

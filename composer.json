@@ -4,21 +4,21 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Jitendra Singh",
-            "email": "jitendra@webkul.com"
+            "name": "HuJie Song",
+            "email": "gice101582@gmail.com"
         }
     ],
     "require": {
     },
     "autoload": {
         "psr-4": {
-            "Webkul\\PackageGenerator\\": "src/"
+            "DevOpsFuture\\PackageGenerator\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Webkul\\PackageGenerator\\Providers\\PackageGeneratorServiceProvider"
+                "DevOpsFuture\\PackageGenerator\\Providers\\PackageGeneratorServiceProvider"
             ],
             "aliases": {}
         }

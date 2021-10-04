@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\PackageGenerator\Console\Command;
+namespace DevOpsFuture\PackageGenerator\Console\Command;
 
 class ModelContractMakeCommand extends MakeCommand
 {

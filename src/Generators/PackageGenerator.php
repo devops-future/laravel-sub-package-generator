@@ -1,11 +1,11 @@
 <?php
 
-namespace Webkul\PackageGenerator\Generators;
+namespace DevOpsFuture\PackageGenerator\Generators;
 
 use Illuminate\Config\Repository as Config;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Str;
-use Webkul\PackageGenerator\Package;
+use DevOpsFuture\PackageGenerator\Package;
 
 class PackageGenerator
 {
@@ -144,7 +144,7 @@ class PackageGenerator
      * 
      * @param  \Illuminate\Config\Repository  $config
      * @param  \Illuminate\Filesystem\Filesystem  $filesystem
-     * @param  \Webkul\PackageGenerator\Package  $package
+     * @param  \DevOpsFuture\PackageGenerator\Package  $package
      */
     public function __construct(
         Config $config,
@@ -163,7 +163,7 @@ class PackageGenerator
      * Set console 
      *
      * @param  \Illuminate\Console\Command  $console
-     * @return Webkul\PackageGenerator\Generators\PackageGenerator
+     * @return DevOpsFuture\PackageGenerator\Generators\PackageGenerator
      */
     public function setConsole($console)
     {
@@ -176,7 +176,7 @@ class PackageGenerator
      * Set package.
      *
      * @param  string  $packageName
-     * @return Webkul\PackageGenerator\Generators\PackageGenerator
+     * @return DevOpsFuture\PackageGenerator\Generators\PackageGenerator
      */
     public function setPackage($packageName)
     {
@@ -189,7 +189,7 @@ class PackageGenerator
      * Set package plain.
      *
      * @param  string  $plain
-     * @return Webkul\PackageGenerator\Generators\PackageGenerator
+     * @return DevOpsFuture\PackageGenerator\Generators\PackageGenerator
      */
     public function setPlain($plain)
     {
@@ -202,7 +202,7 @@ class PackageGenerator
      * Set force status.
      *
      * @param  boolean  $force
-     * @return \Webkul\PackageGenerator\Generators\PackageGenerator
+     * @return \DevOpsFuture\PackageGenerator\Generators\PackageGenerator
      */
     public function setForce($force)
     {
@@ -215,7 +215,7 @@ class PackageGenerator
      * Set type status.
      *
      * @param  boolean  $isPaymentPackage
-     * @return \Webkul\PackageGenerator\Generators\PackageGenerator
+     * @return \DevOpsFuture\PackageGenerator\Generators\PackageGenerator
      */
     public function setType($type)
     {
@@ -228,7 +228,7 @@ class PackageGenerator
      * Set isShippingPackage status.
      *
      * @param  boolean  $isShippingPackage
-     * @return \Webkul\PackageGenerator\Generators\PackageGenerator
+     * @return \DevOpsFuture\PackageGenerator\Generators\PackageGenerator
      */
     public function setIsShippingPackage($isShippingPackage)
     {
