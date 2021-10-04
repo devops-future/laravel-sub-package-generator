@@ -68,8 +68,8 @@ class PackageGenerator
         'package'  => [
             'views/admin/layouts/style'                  => 'Resources/views/admin/layouts/style.blade.php',
             'views/admin/index'                          => 'Resources/views/admin/index.blade.php',
-            'views/shop/default/index'                   => 'Resources/views/shop/default/index.blade.php',
-            'views/shop/velocity/index'                  => 'Resources/views/shop/velocity/index.blade.php',
+            'views/portal/default/index'                   => 'Resources/views/portal/default/index.blade.php',
+            'views/portal/velocity/index'                  => 'Resources/views/portal/velocity/index.blade.php',
             'scaffold/admin-menu'                        => 'Config/admin-menu.php',
             'scaffold/acl'                               => 'Config/acl.php',
             'assets/js/app'                              => 'Resources/assets/js/app.js',
@@ -324,7 +324,7 @@ class PackageGenerator
                 'package' => $this->packageName
             ]);
 
-            $this->console->call('package:make-shop-controller', [
+            $this->console->call('package:make-portal-controller', [
                 'name'    => $this->packageName . 'Controller',
                 'package' => $this->packageName
             ]);
@@ -333,7 +333,7 @@ class PackageGenerator
                 'package' => $this->packageName
             ]);
 
-            $this->console->call('package:make-shop-route', [
+            $this->console->call('package:make-portal-route', [
                 'package' => $this->packageName
             ]);
         } else if ($this->type == 'payment') {

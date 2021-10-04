@@ -6,7 +6,7 @@ Route::group([
     ], function () {
 
         Route::get('/', '$CONTROLLER_CLASS_NAME$@index')->defaults('_config', [
-            'view' => '$LOWER_NAME$::shop.index',
-        ])->name('shop.$LOWER_NAME$.index');
+            'view' => '$LOWER_NAME$::portal.index',
+        ])->name('portal.$LOWER_NAME$.index');
 
 });

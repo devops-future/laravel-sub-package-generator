@@ -1,6 +1,6 @@
 # Laravel Sub Package Generator
 
-It was based on bagisto package generator. Modified for global using...
+It was based on bagisto package generator. Modified "portal" to "portal" for global using...
 
 ## 1. Introduction
 
@@ -37,8 +37,8 @@ Below are the list of commands,
 | 01.    | package:make                           | [Create a new package.](#1-create-a-new-package)                                                                |  package-name                          | --force, --plain    |
 | 02.    | package:make-admin-controller          | [Create a new admin controller.](#2-create-a-new-admin-controller)                                              |  controller-name, package-name         | --force             |
 | 03.    | package:make-admin-route               | [Create a new admin routes file.](#3-create-a-new-admin-routes-file)                                            |  package-name                          | --force             |
-| 04.    | package:make-shop-controller           | [Create a new shop controller.](#4-create-a-new-shop-controller)                                                |  controller-name, package-name         | --force             |
-| 05.    | package:make-shop-route                | [Create a new shop routes file.](#5-create-a-new-shop-routes-file)                                              |  package-name                          | --force             |
+| 04.    | package:make-portal-controller           | [Create a new portal controller.](#4-create-a-new-portal-controller)                                                |  controller-name, package-name         | --force             |
+| 05.    | package:make-portal-route                | [Create a new portal routes file.](#5-create-a-new-portal-routes-file)                                              |  package-name                          | --force             |
 | 06.    | package:make-model                     | [Create a new model class.](#6-create-a-new-model-class)                                                        |  model-name, package-name              | --force             |
 | 07.    | package:make-model-proxy               | [Create a new model proxy class.](#7-create-a-new-model-proxy-class)                                            |  model-proxy-name, package-name        | --force             |
 | 08.    | package:make-model-contract            | [Create a new model contract.](#8-create-a-new-model-contract)                                                  |  model-contract-name, package-name     | --force             |
@@ -61,7 +61,7 @@ Below are the list of commands,
 | 25.    | package:make-payment-method-provider   | [Create a new payment method service provider class.](#25-create-a-new-payment-method-service-provider-class)   |  provider-name, payment-package-name   | --force             |
 | 26.    | package:make-shipping-method           | [Create a new shipping method package.](#26-create-a-new-shipping-method-package)                               |  shipment-package-name                 | --force             |
 | 27.    | package:make-shipping-method-provider  | [Create a new shipping method service provider class.](#27-create-a-new-shipping-method-service-provider-class) |  provider-name, shipment-package-name  | --force             |
-| 28.    | create-a-new-theme-for-shop  | [Create a new theme for shop.](#28-create-a-new-theme-for-shop) |  theme-name  | --force             |
+| 28.    | create-a-new-theme-for-portal  | [Create a new theme for portal.](#28-create-a-new-theme-for-portal) |  theme-name  | --force             |
 | 29.    | create-a-new-theme-for-admin  | [Create a new theme for admin.](#29-create-a-new-theme-for-admin) |  theme-name  | --force             |
 
 
@@ -137,36 +137,36 @@ If admin routes file already present and you want to override this, then you nee
 php artisan package:make-admin-route ACME/TestPackage --force
 ~~~
 
-#### 4. Create a new shop controller
+#### 4. Create a new portal controller
 
-This command will generate a new controller for your shop portion i.e. '**packages/ACME/TestPackage/src/Http/Controllers/Shop**'.
+This command will generate a new controller for your portal portion i.e. '**packages/ACME/TestPackage/src/Http/Controllers/Portal**'.
 
 ~~~php
-php artisan package:make-shop-controller ShopTestController ACME/TestPackage
+php artisan package:make-portal-controller PortalTestController ACME/TestPackage
 ~~~
 
-##### Create a new shop controller with force command
+##### Create a new portal controller with force command
 
 If controller is already present, then you need to use the force command.
 
 ~~~php
-php artisan package:make-shop-controller ShopTestController ACME/TestPackage --force
+php artisan package:make-portal-controller PortalTestController ACME/TestPackage --force
 ~~~
 
-#### 5. Create a new shop routes file
+#### 5. Create a new portal routes file
 
-If you want to create a shop route, then you need to use this command and then register your routes file in the service provider i.e. 'ACME\TestPackage\Providers\TestPackageServiceProvider'.
+If you want to create a portal route, then you need to use this command and then register your routes file in the service provider i.e. 'ACME\TestPackage\Providers\TestPackageServiceProvider'.
 
 ~~~php
-php artisan package:make-shop-route ACME/TestPackage
+php artisan package:make-portal-route ACME/TestPackage
 ~~~
 
-##### Create a new shop routes file with force command
+##### Create a new portal routes file with force command
 
-If shop routes file already present and you want to override this, then you need to use force command.
+If portal routes file already present and you want to override this, then you need to use force command.
 
 ~~~php
-php artisan package:make-shop-route ACME/TestPackage --force
+php artisan package:make-portal-route ACME/TestPackage --force
 ~~~
 
 #### 6. Create a new model class
@@ -517,12 +517,12 @@ If shipping method service provider class already present then you can use force
 php artisan package:make-shipping-method-provider TestShippingMethodServiceProvider ACME/FedEx --force
 ~~~
 
-#### 28. Create a new theme for shop
+#### 28. Create a new theme for portal
 
 This command will create a new theme array inside '**config/themes.php**' file under **themes** key.
 
 ~~~php
-php artisan package:make-shop-theme test ACME/Theme --force
+php artisan package:make-portal-theme test ACME/Theme --force
 ~~~
 
 #### 29. Create a new theme for admin

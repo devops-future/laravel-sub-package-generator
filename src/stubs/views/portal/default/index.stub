@@ -1,4 +1,4 @@
-@extends('shop::layouts.master')
+@extends('portal::layouts.master')
 
 @section('page_title')
     Package $CAPITALIZE_NAME$

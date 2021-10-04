@@ -1,37 +1,37 @@
 <?php
 
-namespace Webkul\PackageGenerator\Providers;
+namespace DevOpsFuture\PackageGenerator\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Webkul\PackageGenerator\Console\Command\PackageMakeCommand;
-use Webkul\PackageGenerator\Console\Command\ProviderMakeCommand;
-use Webkul\PackageGenerator\Console\Command\ModuleProviderMakeCommand;
-use Webkul\PackageGenerator\Console\Command\AdminControllerMakeCommand;
-use Webkul\PackageGenerator\Console\Command\ShopControllerMakeCommand;
-use Webkul\PackageGenerator\Console\Command\AdminRouteMakeCommand;
-use Webkul\PackageGenerator\Console\Command\ShopRouteMakeCommand;
-use Webkul\PackageGenerator\Console\Command\MigrationMakeCommand;
-use Webkul\PackageGenerator\Console\Command\ModelMakeCommand;
-use Webkul\PackageGenerator\Console\Command\ModelProxyMakeCommand;
-use Webkul\PackageGenerator\Console\Command\ModelContractMakeCommand;
-use Webkul\PackageGenerator\Console\Command\RepositoryMakeCommand;
-use Webkul\PackageGenerator\Console\Command\SeederMakeCommand;
-use Webkul\PackageGenerator\Console\Command\MailMakeCommand;
-use Webkul\PackageGenerator\Console\Command\CommandMakeCommand;
-use Webkul\PackageGenerator\Console\Command\EventMakeCommand;
-use Webkul\PackageGenerator\Console\Command\ListenerMakeCommand;
-use Webkul\PackageGenerator\Console\Command\MiddlewareMakeCommand;
-use Webkul\PackageGenerator\Console\Command\RequestMakeCommand;
-use Webkul\PackageGenerator\Console\Command\NotificationMakeCommand;
-use Webkul\PackageGenerator\Console\Command\DatagridMakeCommand;
-use Webkul\PackageGenerator\Console\Command\PaymentPackageMakeCommand;
-use Webkul\PackageGenerator\Console\Command\PaymentMethodProviderMakeCommand;
-use Webkul\PackageGenerator\Console\Command\PaymentMakeCommand;
-use Webkul\PackageGenerator\Console\Command\ShippingPackageMakeCommand;
-use Webkul\PackageGenerator\Console\Command\ShippingMethodProviderMakeCommand;
-use Webkul\PackageGenerator\Console\Command\ShippingMakeCommand;
-use Webkul\PackageGenerator\Console\Command\ShopThemeMakeCommand;
-use Webkul\PackageGenerator\Console\Command\AdminThemeMakeCommand;
+use DevOpsFuture\PackageGenerator\Console\Command\PackageMakeCommand;
+use DevOpsFuture\PackageGenerator\Console\Command\ProviderMakeCommand;
+use DevOpsFuture\PackageGenerator\Console\Command\ModuleProviderMakeCommand;
+use DevOpsFuture\PackageGenerator\Console\Command\AdminControllerMakeCommand;
+use DevOpsFuture\PackageGenerator\Console\Command\PortalControllerMakeCommand;
+use DevOpsFuture\PackageGenerator\Console\Command\AdminRouteMakeCommand;
+use DevOpsFuture\PackageGenerator\Console\Command\PortalRouteMakeCommand;
+use DevOpsFuture\PackageGenerator\Console\Command\MigrationMakeCommand;
+use DevOpsFuture\PackageGenerator\Console\Command\ModelMakeCommand;
+use DevOpsFuture\PackageGenerator\Console\Command\ModelProxyMakeCommand;
+use DevOpsFuture\PackageGenerator\Console\Command\ModelContractMakeCommand;
+use DevOpsFuture\PackageGenerator\Console\Command\RepositoryMakeCommand;
+use DevOpsFuture\PackageGenerator\Console\Command\SeederMakeCommand;
+use DevOpsFuture\PackageGenerator\Console\Command\MailMakeCommand;
+use DevOpsFuture\PackageGenerator\Console\Command\CommandMakeCommand;
+use DevOpsFuture\PackageGenerator\Console\Command\EventMakeCommand;
+use DevOpsFuture\PackageGenerator\Console\Command\ListenerMakeCommand;
+use DevOpsFuture\PackageGenerator\Console\Command\MiddlewareMakeCommand;
+use DevOpsFuture\PackageGenerator\Console\Command\RequestMakeCommand;
+use DevOpsFuture\PackageGenerator\Console\Command\NotificationMakeCommand;
+use DevOpsFuture\PackageGenerator\Console\Command\DatagridMakeCommand;
+use DevOpsFuture\PackageGenerator\Console\Command\PaymentPackageMakeCommand;
+use DevOpsFuture\PackageGenerator\Console\Command\PaymentMethodProviderMakeCommand;
+use DevOpsFuture\PackageGenerator\Console\Command\PaymentMakeCommand;
+use DevOpsFuture\PackageGenerator\Console\Command\ShippingPackageMakeCommand;
+use DevOpsFuture\PackageGenerator\Console\Command\ShippingMethodProviderMakeCommand;
+use DevOpsFuture\PackageGenerator\Console\Command\ShippingMakeCommand;
+use DevOpsFuture\PackageGenerator\Console\Command\PortalThemeMakeCommand;
+use DevOpsFuture\PackageGenerator\Console\Command\AdminThemeMakeCommand;
 
 class PackageGeneratorServiceProvider extends ServiceProvider
 {
@@ -67,9 +67,9 @@ class PackageGeneratorServiceProvider extends ServiceProvider
                 ProviderMakeCommand::class,
                 ModuleProviderMakeCommand::class,
                 AdminControllerMakeCommand::class,
-                ShopControllerMakeCommand::class,
+                PortalControllerMakeCommand::class,
                 AdminRouteMakeCommand::class,
-                ShopRouteMakeCommand::class,
+                PortalRouteMakeCommand::class,
                 MigrationMakeCommand::class,
                 ModelMakeCommand::class,
                 ModelProxyMakeCommand::class,
@@ -90,7 +90,7 @@ class PackageGeneratorServiceProvider extends ServiceProvider
                 ShippingPackageMakeCommand::class,
                 ShippingMethodProviderMakeCommand::class,
                 ShippingMakeCommand::class,
-                ShopThemeMakeCommand::class,
+                PortalThemeMakeCommand::class,
                 AdminThemeMakeCommand::class,
             ]);
         }

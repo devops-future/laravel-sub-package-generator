@@ -4,28 +4,28 @@ namespace Webkul\PackageGenerator\Console\Command;
 
 use Webkul\PackageGenerator\Generators\PackageGenerator;
 
-class ShopControllerMakeCommand extends MakeCommand
+class PortalControllerMakeCommand extends MakeCommand
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'package:make-shop-controller {name} {package} {--force}';
+    protected $signature = 'package:make-portal-controller {name} {package} {--force}';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Create a new shop controller.';
+    protected $description = 'Create a new portal controller.';
 
     /**
      * @return mixed
      */
     protected function getStubContents()
     {
-        return $this->packageGenerator->getStubContents('shop-controller', $this->getStubVariables());
+        return $this->packageGenerator->getStubContents('portal-controller', $this->getStubVariables());
     }
 
     /**
@@ -34,7 +34,7 @@ class ShopControllerMakeCommand extends MakeCommand
     protected function getStubVariables()
     {
         return [
-            'NAMESPACE' => $this->getClassNamespace($this->argument('package') . '/Http/Controllers/Shop'),
+            'NAMESPACE' => $this->getClassNamespace($this->argument('package') . '/Http/Controllers/Portal'),
             'CLASS'     => $this->getClassName(),
         ];
     }
@@ -44,7 +44,7 @@ class ShopControllerMakeCommand extends MakeCommand
      */
     protected function getSourceFilePath()
     {
-        $path = base_path('packages/' . $this->argument('package')) . '/src/Http/Controllers/Shop';
+        $path = base_path('packages/' . $this->argument('package')) . '/src/Http/Controllers/Portal';
 
         return $path . '/' . $this->getClassName() . '.php';
     }

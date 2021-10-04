@@ -26,12 +26,12 @@
             }
         </style>
 
-        {!! view_render_event('bagisto.shop.layout.head') !!}
+        {!! view_render_event('bagisto.portal.layout.head') !!}
     </head>
 
     <body @if (core()->getCurrentLocale()->direction == 'rtl') class="rtl" @endif>
-        {!! view_render_event('bagisto.shop.layout.body.before') !!}
+        {!! view_render_event('bagisto.portal.layout.body.before') !!}
             <b class="main-heading">Hello $THEME_KEY$ Theme</b>
-        {!! view_render_event('bagisto.shop.layout.body.after') !!}
+        {!! view_render_event('bagisto.portal.layout.body.after') !!}
     </body>
 </html>

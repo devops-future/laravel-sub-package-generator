@@ -5,21 +5,21 @@ namespace Webkul\PackageGenerator\Console\Command;
 use Illuminate\Support\Str;
 use Webkul\PackageGenerator\Generators\PackageGenerator;
 
-class ShopThemeMakeCommand extends MakeCommand
+class PortalThemeMakeCommand extends MakeCommand
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'package:make-shop-theme {key} {package} {--force}';
+    protected $signature = 'package:make-portal-theme {key} {package} {--force}';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Create a new theme for shop.';
+    protected $description = 'Create a new theme for portal.';
 
     /**
      * @return mixed
