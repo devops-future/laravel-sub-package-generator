@@ -1,5 +1,5 @@
 {
-    "name": "bagisto/bagisto-package-generator",
+    "name": "devops-future/laravel-sub-package-generator",
     "description": "Bagisto Package Generator",
     "license": "MIT",
     "authors": [
