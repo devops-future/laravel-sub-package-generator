@@ -2,7 +2,7 @@
 
 Route::group([
         'prefix'     => '$LOWER_NAME$',
-        'middleware' => ['web', 'theme', 'locale', 'currency']
+        'middleware' => ['web', 'theme']
     ], function () {
 
         Route::get('/', '$CONTROLLER_CLASS_NAME$@index')->defaults('_config', [

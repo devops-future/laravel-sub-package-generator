@@ -2,7 +2,7 @@
 
 Route::group([
         'prefix'        => 'admin/$LOWER_NAME$',
-        'middleware'    => ['web', 'admin']
+        'middleware'    => ['web']
     ], function () {
 
         Route::get('', '$CONTROLLER_CLASS_NAME$@index')->defaults('_config', [
