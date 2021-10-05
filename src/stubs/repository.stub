@@ -1,5 +1,4 @@
 <?php
-
 namespace $NAMESPACE$;
 
 use DevOpsFuture\Core\Eloquent\Repository;
